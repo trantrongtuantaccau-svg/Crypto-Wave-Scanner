@@ -21,8 +21,22 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 log = logging.getLogger(__name__)
 
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
-TELEGRAM_TOKEN  = "YOUR_BOT_TOKEN"
-CHAT_ID         = "YOUR_CHAT_ID"
+import os
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8516809724:AAEeb9hQHvsJbfDY0N6aboJnvvu05LHiv64")
+CHAT_ID        = os.environ.get("CHAT_ID", "8798304106")
+```
+
+---
+
+### BƯỚC 4 — Tạo Bot Telegram & lấy Token
+
+1. Mở Telegram → tìm **@BotFather**
+2. Gõ `/newbot`
+3. Nhập tên: `Wave Crypto Signal`
+4. Nhập username: `wave_crypto_signal_bot`
+5. Copy **Token** nhận được:
+```
+7412365890:AAFxyz_abcdef...
 
 MIN_VOLUME_USDT = 5_000_000        # 5M USDT
 WAVE_BUY_THRESHOLD  = 8            # Cao hơn vì tìm điểm đảo chiều
