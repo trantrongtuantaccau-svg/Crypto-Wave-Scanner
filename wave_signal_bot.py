@@ -22,10 +22,7 @@ log = logging.getLogger(__name__)
 
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
 import os
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "8516809724:AAEeb9hQHvsJbfDY0N6aboJnvvu05LHiv64")
-CHAT_ID        = os.environ.get("CHAT_ID", "8798304106")
-```
-
+BOT_TOKEN = os.environ.get("8516809724:AAEeb9hQHvsJbfDY0N6aboJnvvu05LHiv64")
 ---
 
 ### BƯỚC 4 — Tạo Bot Telegram & lấy Token
